@@ -22,3 +22,8 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+Ruby on Railsでdeviseを導入する(Bootstrap4+日本語化対応)
+https://qiita.com/MURAMASA2470/items/705b54d569e14979c413
+
+
