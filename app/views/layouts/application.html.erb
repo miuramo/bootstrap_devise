@@ -12,13 +12,16 @@
   <body>
 
   <% if user_signed_in? %>
-    <p><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></p>
+    <p class="text-right">
+Login as : <%= current_user.email %>
+<%= link_to 'ユーザ情報編集', edit_user_registration_path , class: "btn btn-light" %>
+<%= link_to "ログアウト", destroy_user_session_path, method: :delete , class: "btn btn-secondary" %></p>
   <% end %>
 
 <% if notice %>
-  <p class="notice"><%= notice %></p>
+  <p class="alert alert-info"><%= notice %></p>
 <% elsif alert %>
-  <p class="alert"><%= alert %></p>
+  <p class="alert alert-danger"><%= alert %></p>
 <% end %>
 
     <%= yield %>
