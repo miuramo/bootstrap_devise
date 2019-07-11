@@ -32,12 +32,15 @@ Things you may want to cover:
 * https://qiita.com/iamdaisuke/items/79d60b3c23e465ae6460
 
  vi Gemfile
+```
   gem 'cancancan'
   gem 'rails_admin'
+```
  bundle install
  rails g cancan:ability
  rails g rails_admin:install
  vi config/initializers/rails_admin.rb 
+```
   ## == Devise ==
   config.authenticate_with do
     warden.authenticate! scope: :user
@@ -46,13 +49,17 @@ Things you may want to cover:
 
   ## == Cancan ==
   config.authorize_with :cancan
+```
 
  rails g migration AddAdminFlgToUser admin_flg:boolean
  rails db:migrate
  rails c
+```
   > user = User.find(1)
   > user.update_attribute(:admin_flg, true)
+```
  vi app/models/ability.rb
+```
   class Ability
     include CanCan::Ability
 
@@ -63,3 +70,4 @@ Things you may want to cover:
       end
     end
   end
+```
