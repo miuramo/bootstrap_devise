@@ -63,4 +63,16 @@ config.web_console.whitelisted_ips = '0.0.0.0/0'
 
 config.action_mailer.default_url_options = { host: 'ist26.istlab.info', port: 3428 }
 
+config.action_mailer.raise_delivery_errors = true
+
+ActionMailer::Base.delivery_method = :smtp
+ActionMailer::Base.smtp_settings = {
+   :address => "ist2.istlab.info", # smtpサーバーのホスト名
+   :port => 587,
+#   :authentication => :plain,
+#   :user_name => "admin",
+#   :password => "xxx",
+   :enable_starttls_auto => false,
+ }
+
 end
