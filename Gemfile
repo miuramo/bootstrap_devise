@@ -72,4 +72,7 @@ gem 'font-awesome-rails'
 gem 'bootstrap', '>= 4.3.1'
 gem 'jquery-rails'
 
+#CanCanCan 
+gem 'cancancan'
+gem 'rails_admin'
 
