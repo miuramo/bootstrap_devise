@@ -1,27 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Usage
 
-Things you may want to cover:
+```
+$  git clone git@github.com:miuramo/bootstrap_devise.git
+$  cd bootstrap_devise/
+$  bundle install
+$  rails db:migrate
+$  rails s -b 0.0.0.0 -p 3428
+```
+* ポート番号(3428)を変えるときは、$ ./findgrep 3428 で、どのファイルを修正すべきか、確認して、変更してください。
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+---
 
 # Ruby on Railsでdeviseを導入する(Bootstrap4+日本語化対応)
 
