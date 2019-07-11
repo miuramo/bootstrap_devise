@@ -37,8 +37,11 @@ Things you may want to cover:
   gem 'rails_admin'
 ```
  bundle install
+
  rails g cancan:ability
+
  rails g rails_admin:install
+
  vi config/initializers/rails_admin.rb 
 ```
   ## == Devise ==
@@ -52,7 +55,9 @@ Things you may want to cover:
 ```
 
  rails g migration AddAdminFlgToUser admin_flg:boolean
+
  rails db:migrate
+
  rails c
 ```
   > user = User.find(1)
