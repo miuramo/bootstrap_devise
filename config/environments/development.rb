@@ -61,4 +61,6 @@ Rails.application.configure do
 
 config.web_console.whitelisted_ips = '0.0.0.0/0'
 
+config.action_mailer.default_url_options = { host: 'ist26.istlab.info', port: 3428 }
+
 end
