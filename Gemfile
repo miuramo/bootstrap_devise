@@ -62,7 +62,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #devise本体
-gem 'devise'
+gem 'devise', ">= 4.7.1"
 
 #deviseの日本語化用
 gem 'devise-i18n'
